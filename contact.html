@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> RRSC Webpage</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+    <!--header section-->
+
+    <section class="sub-header5">
+      <nav>
+        <a href="index.html"><img src="pi1.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="locusts.html">Locust Biology</a></li>
+            <li><a href="proj.html">Bulletin</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!--contact us-->
+
+    <section class="location">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114550.46976058719!2d72.93848845653756!3d26.206364700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39418bb0afd5bef9%3A0xaea174d001879fea!2sRegional%20Remote%20Sensing%20Centre%20-%20West!5e0!3m2!1sen!2sin!4v1751651219013!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </section>
+    <sec class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>Kuri Bhagtasani Housing Board</h5>
+              <p>JODHPUR -342 005 </p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>0291-2796394</h5>
+              <p>Monday to Saturday, 9AM to 5PM </p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>gmrc_w@nrsc.gov.in</h5>
+              <p>email us for any query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="https://formsubmit.co/binjariyaarun@gmail.com" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required placeholder="Enter your name">
+            <label for="visitor_email">Email:</label>
+            <input type="email" name="email" required placeholder="Enter your email">
+            <label for="subject">Subject:</label>
+            <input type="text" name="subject" required placeholder="Enter your subject">
+            <label for="message">Message:</label>
+            <textarea rows="8" name="message" required placeholder="Type your message"></textarea>
+            <input type="hidden" name="_captcha" value="false">
+            <button type="submit" class="herobtn redbtn finbtn">submit form</button>
+          </form>
+        </div>
+      </div>
+    </sec>
+
+    <!--footer-->
+
+
+    <section class="footer">
+        <h4>
+            ABOUT US 
+        </h4>
+        <p>
+            Regional Remote Sensing Centre (RRSC) -West
+Indian Space Research Organisation
+Dept. of Space, Govt. Of India
+New ISRO Complex, <br> 9 Sector,
+Kuri Bhagtasani Housing Board
+JODHPUR -342 005 <br>
+Phone no - 0291-2796394 <br>
+
+Email : gmrc_w@nrsc.gov.in
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i></p>
+    </section>
+    <!--js for toggle menu-->
+
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

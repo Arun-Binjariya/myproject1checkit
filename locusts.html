@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> RRSC Webpage </title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+
+    <!--header section-->
+
+    <section class="sub-header1">
+      <nav>
+        <a href="index.html"><img src="pi1.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="locusts.html">Locust Biology</a></li>
+            <li><a href="proj.html">Bulletin</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>Locust Biology</h1>
+    </section>
+
+    <!-- about locusts-->
+
+    <section class="locusts-ok">
+      <h1>Locust lifecycle</h1>
+      <p>
+        Locust life cycle has three distinct stages (i) Egg, (ii) Hopper and (iii) Adult.
+      </p>
+      <dl>
+        <dt>EGG</dt>
+        <dd>Eggs are laid in pods in moist sandy soil at a depth of about 10 cms at an interval of 7 – 10 days. Gregarious female usually lay 2-3 egg pods having 60-80 eggs in average. Solitarious female mostly lay 3-4 times having 150-200 eggs in average. The rate of development of eggs depends on soil moisture and temperature. No development takes place below 15°C. The incubation period is 10-12 days when the optimum temperature is between 32-35°C.</dd>
+        <dt>Adult</dt>
+        <dd>The Vth Instar adult moults into adult stage. This change is called 'fledging' and the young adult is called 'fledgling' or 'immature adult' means they are sexually immature. The period of sexual maturity varies. In suitable condition the adult may mature in 3 weeks and under cool and /or dry condition it may take 8 months time. During this stage the adults fly for search of favorable breeding condition and may cover thousands of kilometers.
+Young immature adults are pink in color but old ones become dark red or brown in cold condition. On maturation the adults become bright yellow. Males mature before females. Oviposition commences within two days of copulation
+</dd>
+        <dt>Hopper</dt>
+        <dd>
+            After incubation is complete the eggs hatch and nymph (young ones) emerge. There are 5 instars in gregarious and 5-6 instars in solitarious population. In each instars there is a growth and change in characteristic coloration <br>
+            <img src="pi14.png" alt=""><br>
+            The rate of development in hopper depends on temperature. It takes 22 days when the mean air temperature is hot say about 37°C and may be delayed up to 70 days when the mean temperature is cold say about 22°C.
+        </dd>
+      </dl>
+      <img id="hello" src="pi15.png" alt="">
+    </section>
+    <section class="table">
+        <h2>Scheduled Desert Area of India</h2>
+        <img src="pi16.png" alt="">
+        <img src="pi17.png" alt="">
+        <img src="pi18.png" alt="">
+    </section>
+    <!--footer-->
+
+
+    <section class="footer">
+        <h4>
+            ABOUT US 
+        </h4>
+        <p>
+            Regional Remote Sensing Centre (RRSC) -West
+Indian Space Research Organisation
+Dept. of Space, Govt. Of India
+New ISRO Complex, <br> 9 Sector,
+Kuri Bhagtasani Housing Board
+JODHPUR -342 005 <br>
+Phone no - 0291-2796394 <br>
+
+Email : gmrc_w@nrsc.gov.in
+        </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>made with <i class="fa fa-heart-o"></i></p>
+    </section>
+
+
+
+    <!--js for toggle menu-->
+
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
+

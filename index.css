@@ -1,0 +1,631 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi26.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 10vw;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 8px 12px;
+}
+
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    margin-top: 5vh;
+    font-size: 52px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.herobtn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.herobtn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width:700px) {
+
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+    }
+
+    .header .text-box p {
+        height: 40vh;
+        overflow-y: scroll;
+    }
+}
+
+/*course*/
+.sub-header3 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi27.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 48%;
+    background: #ffeded;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#ls {
+    font-size: medium;
+    margin-left: 15vw;
+    margin-right: 15vw;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/*locusts*/
+
+.locusts {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.locusts p {
+    font-size: 20px;
+}
+
+.cardbox {
+    border-radius: 10px;
+    border: 2px solid rgb(215, 238, 245);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10vh;
+    background: #e7fbfe;
+    margin-top: 20px;
+}
+
+.cardbox1 {
+    border-radius: 10px;
+    border: 2px solid rgb(215, 238, 245);
+    text-align: left;
+    padding: 4vh;
+    margin-top: 20px;
+    background: #e7fbfe;
+}
+
+.card {
+    margin: 2px;
+    height: 30vh;
+    width: 30vw;
+}
+
+.card img {
+    height: 30vh;
+    width: 30vw;
+    object-fit: fill;
+}
+
+.cardbox p {
+    height: 30vh;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.locusts h2 {
+    margin: 5vh;
+    text-align: left;
+}
+
+.cardbox1 .cd1 h3 {
+    text-align: left;
+}
+
+.cd1 ul {
+    color: #777;
+}
+
+.locusts-ok img {
+    width: 60vw;
+}
+
+/*footer*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px o;
+}
+
+.fa-heart-o {
+    color: #f44336;
+}
+
+/* about us page*/
+.sub-header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi29.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-header h1 {
+    margin-top: 30px;
+    text-shadow: 2px 2px 1px #777;
+}
+
+
+.aboutsec{
+    padding: 8vw;
+    padding-bottom: 0;
+}
+.aboutdiv{
+    border-radius: 10px;
+    text-align: center;
+    width: 73vw;
+    height: 60vh;
+    background-color: rgb(253, 244, 244);
+    padding: 10vh;
+}
+.aboutdiv p{
+    font-size: larger;
+    padding-top: 5vh;
+}
+@media(max-width:700px) {
+    .aboutsec{
+        width: 84vw;
+        padding: 8vw;
+        padding-bottom: 0;
+    }
+    .aboutdiv{
+        border-radius: 10px;
+        text-align: center;
+        width: 62vw;
+        height: 60vh;
+        background-color: rgb(253, 244, 244);
+        padding: 10vw;
+        overflow-y: scroll;
+    }
+    .aboutdiv h1{
+        font-size: larger;
+    }
+    .aboutdiv p{
+        font-size: small;
+        padding-top: 5vh;
+    }
+}
+/*contact page*/
+.sub-header5 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi31.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: #555;
+}
+
+.contact-col input,
+.contact-col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    background: #f7eeee;
+    box-sizing: border-box;
+}
+.finbtn{
+    background-color: rgb(14, 94, 45);
+}
+
+/*locusts page*/
+.sub-header1 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi32.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+.table h2 {
+    text-align: center;
+    margin: 8vh;
+}
+
+.table img {
+    width: 70vw;
+    margin-left: 15vw;
+
+}
+
+.locusts-ok {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.locusts-ok h1 {
+    text-align: center;
+}
+
+.locusts-ok p {
+    text-align: center;
+    font-size: large;
+}
+
+.locusts-ok dl {
+    margin-top: 5vh;
+}
+
+.locusts-ok dl dt {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: x-large;
+    padding-left: 10vh;
+}
+
+.locusts-ok dl dd {
+    padding-left: 10vh;
+    font-size: large;
+    margin: 5vh;
+}
+
+#hello {
+    margin-top: 5vh;
+    width: 40vw;
+    padding-left: 20vw;
+}
+
+@media(max-width:700px) {
+    .cardbox {
+        padding: 4vh;
+        display: block;
+    }
+
+    .card {
+        width: 60vw;
+    }
+
+    .card img {
+        width: 60vw;
+    }
+
+    .locusts-ok dl dd {
+        padding-left: 2vw;
+        font-size: medium;
+        margin: 5vw;
+    }
+    .locusts-ok dl dt{
+        padding-left: 5vh;
+    }
+}
+
+/*proj page*/
+.sub-header2 {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(pi33.webp);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.bulletins{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vw;
+}
+.projcontent{
+    width: 60vw;
+    margin: 2vw;
+    padding: 2vw;
+}
+.projectbulletins{
+    width: 25vw;
+    margin: 2vw;
+    background: white;
+    height: min-content;
+}
+
+.projcontent h1{
+    font-size: xx-large;
+    text-align: center;
+    padding: 3vw;
+}
+.projcontent h2{
+    text-align: center;
+    color: brown;
+    padding: 3vw;
+}
+.projcontent>p>span{
+    color: black;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.projcontent .aimg{
+    width: 27vw;
+}
+.projcontent .cimg{
+    width: 55vw;
+}
+.projcontent .cimg:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease;
+}
+.projcontent .aimg:hover{
+    transform: scale(1.5);
+    transition: transform 1s ease;
+}
+.db{
+    padding: 2vw;
+    box-shadow: 2px 2px 2px 2px #d3d3d3;
+    height: 6vh;
+    margin: 1vw;
+    background: white
+}
+.db h1{
+    font-size: x-large;
+    text-align: center;
+}
+.pb{
+    text-decoration: none;
+}
+#hb{
+    background-color: #f7c5c1;
+}
+@media(max-width:700px) {
+    .projcontent .aimg {
+        display: flex;
+        width: 80vw;
+        padding: 2vw;
+    }
+
+    .projcontent img {
+        width: 80vw;
+        padding: 2vw;
+    }
+    .bulletins{
+        display: inline-block;
+        padding: 5vw;
+    }
+    .projcontent{
+        width: 80vw;
+        margin: 2vw;
+        padding: 2vw;
+    }
+    .projectbulletins{
+        width: 80vw;
+        margin: 2vw;
+        background: white;
+        height: min-content;
+    }
+    #hb h1{
+        font-size: medium;
+    }
+    .projcontent h1{
+        font-size: medium;
+        text-align: center;
+        padding: 3vw;
+    }
+    .projcontent h2{
+        font-size: small;
+        text-align: left;
+    }
+    .projcontent p{
+        font-size: smaller;
+    }
+}
